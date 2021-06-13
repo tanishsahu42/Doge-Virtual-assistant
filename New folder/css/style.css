@@ -1,0 +1,120 @@
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    
+    font-family: 'Roboto-Regular';
+    background: linear-gradient(45deg,#a700ff,#4d19db)};
+
+
+.main {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+.tit
+{
+    background: transparent;
+    margin-top: 40px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    border: 2px solid black ;
+    border-radius: 3%;
+    width: 30%;
+    box-shadow: 0 0 10px #666;
+
+}
+.main button {
+    background: #ff3b3b;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #666;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.main button:focus{outline: none;}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.user-area, .chatbot-area {
+    width: 20%;
+    height: calc(100vh - 60px);
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 80px;
+    z-index: 99999;
+}
+.chatbot-area {
+    float: right;
+    right: 80px;
+    left: auto;
+}
+.user-area img, .chatbot-area img {
+    width: 100%;
+    clip-path: circle();
+}
+.user-area img{left: 0;}
+.chatarea-main {
+    width: 42%;
+    margin: 0 auto;
+}
+.chatarea-outer {
+    width: 100%;
+    float: left;
+}
+.chatbot-area .chatarea-main{float: left;}
+.chatarea.user {
+    float: right;
+    width: 40%;
+    padding: 20px 0;
+}
+
+.chatarea-inner {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    margin: 5px 0;
+}
+.chatarea-inner.user{
+    background: #6522A4;
+}
+.chatarea-inner.chatbot{
+    background: #466EB6;
+    float: right;
+}
+.chatarea-inner.user:before {
+    content: '';
+    position: absolute;
+    border-right: 20px solid #6522A4;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 0;
+    left: -20px;
+}
+.chatarea-inner.chatbot:before {
+    content: '';
+    position: absolute;
+    border-left: 20px solid #466EB6;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 0;
+    right: -20px;
+}
+
+.chatbot-area .chatarea-inner{float: left;}
+
